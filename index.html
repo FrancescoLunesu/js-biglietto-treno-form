@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title></title>
+    </head>
+    <body>
+        <section class="container">
+            <h2> CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2>
+            <div class="row1">
+                <div class="form">
+                    <label for="name"> Nome e Cognome</label>
+                    <input id="nome" type="text" name="name">
+                    <label for="km"> Km da percorrere</label>
+                    <input id="km" type="number" name="km">
+                    <label for="cars">Fascia d'età</label>
+                    <select id="eta" name="eta">
+                        <option value="">Minorenne</option>
+                        <option value="">Maggiorenne</option>
+                        <option value="">Over65</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div>
+                        <button id="genera" onclick="genera()" type="button" name="button"> Genera </button>
+                        <button id="annulla" onclick="annulla()" type="button" name="button"> Annulla </button>
+                    </div>
+                </div>
+            </div>
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="row2">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <table>
+                    <tr>
+                        <th>Nome Passeggero</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                        <td id="cliente"></td>
+                        <td id="offerta">Maggiorenne</td>
+                        <td id="">4</td>
+                        <td id="">99756</td>
+                        <td id="">18,50€</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+
+        <script src="js/script.js" charset="utf-8"></script>
+
+    </body>
+</html>
