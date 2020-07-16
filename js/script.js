@@ -7,7 +7,6 @@ document.getElementById('genera').addEventListener("click", function(){
     var sconto = 0;
     var name = document.getElementById('nome').value;
     var eta = document.getElementById('eta').value;
-    // var carrozza;
     document.getElementById('cliente').innerHTML = name;
     // generazione numeri random
     document.getElementById('carrozza').innerHTML = Math.floor(Math.random()*10) + 1;
@@ -38,51 +37,12 @@ document.getElementById('genera').addEventListener("click", function(){
 }
 )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//
-// var chilometri = parseInt(prompt("Quanti chilometri devi percorrere?"));
-// var eta = parseInt(prompt("Quanti anni ha il passeggero?"));
-// var prezzoFisso = 0.21;
-// var prodotto = prezzoFisso * chilometri;
-// var sconto = 0;
-// var prezzoFinale = prodotto;
-//
-// // il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// // va applicato uno sconto del 20% per i minorenni
-// // va applicato uno sconto del 40% per gli over 65
-//
-// if (eta < 18) {
-//     sconto = (prodotto * 20) / 100;
-//     prezzoFinale = prodotto - sconto;
-//     document.getElementById('prezzo').innerHTML = "il prezzo da pagare è:" + " " + prezzoFinale;
-//
-// } else if (eta >= 65) {
-//     sconto = (prodotto * 40) / 100;
-//     prezzoFinale = prodotto - sconto;
-//     document.getElementById('prezzo').innerHTML = "il prezzo da pagare è:" + " " + prezzoFinale;
-//
-// } else {
-//     document.getElementById('prezzo').innerHTML = "il prezzo da pagare è:" + " " + prezzoFinale;
-//
-// }
+// CREO FUNZIONE CHE SI ATTIVA CLICCANDO IL BOTTONE "annulla" e pulisce la tabella
+document.getElementById('annulla').addEventListener("click", function(){
+    document.getElementById('cliente').innerHTML = " ";
+    document.getElementById('offerta').innerHTML = " ";
+    document.getElementById('carrozza').innerHTML = " ";
+    document.getElementById('CP').innerHTML = " ";
+    document.getElementById('costoTot').innerHTML = " ";
+}
+)
